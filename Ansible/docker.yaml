@@ -10,14 +10,14 @@
       community.docker.docker_login:
         registry_url: https://index.docker.io/v1/
         username: "santhoshperiasamy1995"
-        password: "MyHornet8082#"
+        password: "dckr_pat_F5ADeS0O_F2o2-gu2LikAegs31I"
 
     - name: Build and Push Docker image
       community.docker.docker_image:
         name: "santhoshperiasamy1995/petstore"
         tag: latest
         build:
-          path: /var/lib/jenkins/workspace/petstore
+          path: /var/lib/jenkins/workspace/petshop
         push: yes
         source: build
 
